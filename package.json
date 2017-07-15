@@ -25,6 +25,8 @@
     "> 1%"
   ],
   "dependencies": {
-    "hapi": "^16.4.3"
+    "handlebars": "^4.0.10",
+    "hapi": "^16.4.3",
+    "vision": "^4.1.1"
   }
 }
