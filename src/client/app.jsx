@@ -1,9 +1,7 @@
 import React from 'react'
 
-const App = () => {
-  return (
-    <h1>Hello React</h1>
-  )
-}
+import Hello from '../shared/components/presentation/Hello/Hello'
+
+const App = () => <Hello />
 
 export default App
