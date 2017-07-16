@@ -1,7 +1,8 @@
 {
   "extends": "airbnb",
   "env": {
-    "jest": true
+    "jest": true,
+    "browser": true
   },
   "plugins": [
     "compat"
@@ -12,6 +13,7 @@
     "comma-dangle": [
       2,
       "never"
-    ]
+    ],
+    "arrow-body-style": ["error", "always"]
   }
 }
