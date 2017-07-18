@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import Hello from '../shared/components/presentation/Hello/Hello'
+import MainConatiner from '../shared/components/containers/MainContainer/MainContainer'
 
-const App = () => <Hello />
-
-export default App
+export default class App extends Component {
+  render() {
+    return (
+      <Router>
+        <MainConatiner />
+      </Router>
+    )
+  }
+}
