@@ -1,5 +1,6 @@
 import path from 'path'
 import webpack from 'webpack'
+import postcssNext from 'postcss-cssnext'
 
 import { WDS_PORT } from '../../src/shared/config'
 
@@ -24,7 +25,33 @@ export default {
   ],
   module: {
     rules: [
-      { test: /\.(js|jsx)$/, use: 'babel-loader', exclude: /node_modules/ }
+      {
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                postcssNext
+              ]
+            }
+          }
+        ]
+      }
     ]
   },
   devtool: 'source-maps',

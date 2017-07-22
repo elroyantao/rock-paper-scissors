@@ -7,21 +7,29 @@
   "author": "(Elroy Antão <elroyantao@gmail.com>):",
   "license": "MIT",
   "scripts": {
-    "start": "yarn dev:start",
-    "lol": "babel-node src",
+    "start": "yarn dev:start | yarn dev:wds",
     "dev:start": "nodemon --ignore lib --exec babel-node src",
     "dev:wds": "webpack-dev-server --progress",
-    "prod:build": "babel src -d lib --ignore .test.js && NODE_ENV=production webpack -p --progress --config build/webpack/config.babel.js",
-    "test": "eslint src && jest --coverage"
+    "prod:build": "yarn lint && babel src -d lib --ignore .spec.js --copy-files && NODE_ENV=production webpack -p --progress --config build/webpack/config.babel.js",
+    "prod": "NODE_ENV=production node lib",
+    "unit:test": "jest --coverage",
+    "lint": "eslint src",
+    "test": "yarn lint && yarn unit:test"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-plugin-compat": "^1.0.4",
@@ -29,7 +37,14 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^0.14.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
     "nodemon": "^1.11.0",
+    "postcss": "^6.0.8",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-loader": "^2.0.6",
+    "react-test-renderer": "^15.6.1",
+    "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
   },
@@ -40,6 +55,7 @@
     "babel-polyfill": "^6.23.0",
     "handlebars": "^4.0.10",
     "hapi": "^16.4.3",
+    "inert": "^4.2.0",
     "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
@@ -51,5 +67,15 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "vision": "^4.1.1"
+  },
+  "jest": {
+    "verbose": true,
+    "testRegex": "./(src)/.+\\.spec\\.jsx?$",
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.css$": "identity-obj-proxy"
+    }
   }
 }

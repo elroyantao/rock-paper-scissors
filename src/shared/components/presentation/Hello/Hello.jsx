@@ -9,17 +9,17 @@ import { setName } from '../../../actions/helloAction'
 }), { setName })
 class Hello extends Component {
 
+  static propTypes = {
+    name: PropTypes.string,
+    setName: PropTypes.func
+  }
+
   componentDidMount() {
     this.props.setName('Elroysaa')
   }
   render() {
     return <h1>Hello React!! {this.props.name}</h1>
   }
-}
-
-Hello.propTypes = {
-  name: PropTypes.string,
-  setName: PropTypes.func
 }
 
 export default Hello

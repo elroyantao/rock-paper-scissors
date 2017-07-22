@@ -1,0 +1,14 @@
+.Header {
+
+}
+
+.Header-nav {
+  color: green;
+  text-decoration: none;
+}
+
+.Header-nav--active {
+  composes: Header-nav;
+  color: red;
+  text-decoration: underline;
+}

@@ -1,16 +1,18 @@
+import path from 'path'
+
 import serverSideRenderer from './handlers/server-side-renderer'
-import categoryHandler from './handlers/categoryHandler'
 
 export default [
   {
     method: 'GET',
-    path: '/api/categories',
-    handler: categoryHandler
+    path: '/public/{param*}',
+    handler: (req, reply) => {
+      reply.file(path.resolve(__dirname, '../../public/', req.params.param))
+    }
   },
   {
     method: 'GET',
-    path: '/',
+    path: '/{param*}',
     handler: serverSideRenderer
   }
-
 ]

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header />  @renders in default state 1`] = `
+<div
+  className="Header"
+>
+  this is a header
+  <NavLink
+    activeClassName="Header-nav--active"
+    className="Header-nav"
+    exact={true}
+    to="/"
+  >
+    home
+  </NavLink>
+  <NavLink
+    activeClassName="Header-nav--active"
+    className="Header-nav"
+    to="/hello"
+  >
+    hello
+  </NavLink>
+</div>
+`;
