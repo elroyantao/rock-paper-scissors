@@ -1,29 +1,13 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
+* install dependency ```yarn install``` or ```npm install```
+* run test ```yarn test``` or ```npm run test```
+* build files ```yarn prod:build``` ```npm run prod:build```
+* run prod ```yarn prod``` ```npm run prod```
+* run dev ```yarn start``` ```npm start```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+The first step to solving the problem was to get the logic to decide who would win given the 2 hands played. Once that was written and tested I went about writing code for the UI.
