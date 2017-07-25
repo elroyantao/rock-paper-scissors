@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handAction clearHand 1`] = `
+Object {
+  "type": "CLEAR_HANDS",
+}
+`;
+
+exports[`handAction setComputerHand 1`] = `
+Object {
+  "computerHand": 2,
+  "type": "SET_COMPUTER_HAND",
+}
+`;
+
+exports[`handAction setPlayerHand 1`] = `
+Object {
+  "playerHand": 1,
+  "type": "SET_PLAYER_HAND",
+}
+`;

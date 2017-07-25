@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`scoreAction computerWins 1`] = `
+Object {
+  "type": "COMPUTER_WINS",
+}
+`;
+
+exports[`scoreAction itsATie 1`] = `
+Object {
+  "type": "ITS_A_TIE",
+}
+`;
+
+exports[`scoreAction playerWins 1`] = `
+Object {
+  "type": "PLAYER_WINS",
+}
+`;
+
+exports[`scoreAction resetScore 1`] = `
+Object {
+  "type": "RESET_SCORE",
+}
+`;

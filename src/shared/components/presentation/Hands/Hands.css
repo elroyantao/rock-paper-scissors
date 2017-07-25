@@ -1,0 +1,10 @@
+.Hands {
+  max-width: 100%;
+  text-align: center;
+}
+.Hands-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}

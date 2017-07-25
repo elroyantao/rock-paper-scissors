@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hands />  @renders in default state 1`] = `
+<div
+  className="Hands"
+>
+  <h3>
+    Please play your hand
+  </h3>
+  <div
+    className="Hands-list"
+  >
+    <Hand
+      onClick={[Function]}
+      type={0}
+    />
+    <Hand
+      onClick={[Function]}
+      type={2}
+    />
+    <Hand
+      onClick={[Function]}
+      type={4}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Hands />  @renders with hands as null 1`] = `null`;
+
+exports[`<Hands />  @renders with playerHand set 1`] = `null`;

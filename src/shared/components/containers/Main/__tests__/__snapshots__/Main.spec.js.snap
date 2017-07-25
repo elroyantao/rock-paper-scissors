@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main />  @renders in default state 1`] = `
+<div
+  className="Main"
+>
+  <Connect(Score) />
+  <Connect(Controls) />
+</div>
+`;

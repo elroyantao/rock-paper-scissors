@@ -1,0 +1,33 @@
+.Controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.Controls-result {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.Controls-result--win {
+  composes: Controls-result;
+  color: #59d482;
+}
+.Controls-result--loose {
+  composes: Controls-result;
+  color: #ec6d6d;
+}
+.Controls-result--tie {
+  composes: Controls-result;
+  color: #f1be35;
+}
+
+
+.Controls-playAgain {
+  padding: 5px 20px;
+  background-color: #A5E3F4;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+}

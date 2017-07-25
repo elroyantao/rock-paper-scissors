@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InProgress />  @renders in default state 1`] = `null`;
+
+exports[`<InProgress />  @renders when playerHand and computerHand is not null 1`] = `
+<div
+  className="InProgress"
+>
+  <div
+    className="InProgress-player"
+  >
+    <h3
+      className="InProgress-label"
+    >
+      You choose
+    </h3>
+    <Hand
+      isProgress={true}
+      onClick={[Function]}
+      type={3}
+    />
+  </div>
+  <div
+    className="InProgress-player"
+  >
+    <h3
+      className="InProgress-label"
+    >
+      computer choose
+    </h3>
+    <Hand
+      isProgress={true}
+      onClick={[Function]}
+      type={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`<InProgress />  @renders when playerHand and computerHand is not null and level is advanced 1`] = `
+<div
+  className="InProgress"
+>
+  <div
+    className="InProgress-player"
+  >
+    <h3
+      className="InProgress-label"
+    >
+      You choose
+    </h3>
+    <Hand
+      isProgress={true}
+      onClick={[Function]}
+      type={3}
+    />
+  </div>
+  <div
+    className="InProgress-player"
+  >
+    <h3
+      className="InProgress-label"
+    >
+      computer choose
+    </h3>
+    <Hand
+      isProgress={true}
+      onClick={[Function]}
+      type="advancedWaiting"
+    />
+  </div>
+</div>
+`;
+
+exports[`<InProgress />  @renders when playerHand is not null and computerHand is null 1`] = `
+<div
+  className="InProgress"
+>
+  <div
+    className="InProgress-player"
+  >
+    <h3
+      className="InProgress-label"
+    >
+      You choose
+    </h3>
+    <Hand
+      isProgress={true}
+      onClick={[Function]}
+      type={3}
+    />
+  </div>
+  <div
+    className="InProgress-player"
+  >
+    <h3
+      className="InProgress-label"
+    >
+      computer choose
+    </h3>
+    <Hand
+      isProgress={true}
+      onClick={[Function]}
+      type="classicWaiting"
+    />
+  </div>
+</div>
+`;

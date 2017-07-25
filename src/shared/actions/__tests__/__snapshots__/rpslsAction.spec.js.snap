@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is LIZARD and player2 is LIZARD 1`] = `0`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is LIZARD and player2 is PAPER 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is LIZARD and player2 is ROCK 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is LIZARD and player2 is SCISSORS 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is LIZARD and player2 is SPOCK 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is PAPER and player2 is LIZARD 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is PAPER and player2 is PAPER 1`] = `0`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is PAPER and player2 is ROCK 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is PAPER and player2 is SCISSORS 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is PAPER and player2 is SPOCK 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is ROCK and player2 is LIZARD 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is ROCK and player2 is PAPER 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is ROCK and player2 is ROCK 1`] = `0`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is ROCK and player2 is SCISSORS 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is ROCK and player2 is SPOCK 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SCISSORS and player2 is LIZARD 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SCISSORS and player2 is PAPER 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SCISSORS and player2 is ROCK 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SCISSORS and player2 is SCISSORS 1`] = `0`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SCISSORS and player2 is SPOCK 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SPOCK and player2 is LIZARD 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SPOCK and player2 is PAPER 1`] = `2`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SPOCK and player2 is ROCK 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SPOCK and player2 is SCISSORS 1`] = `1`;
+
+exports[`rpslsAction findWinner snapshot the winners when player1 is SPOCK and player2 is SPOCK 1`] = `0`;

@@ -1,0 +1,19 @@
+.Score {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Score-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Score-label {
+  font-size: 18px;
+}
+
+.Score-current {
+  font-size: 15px;
+}

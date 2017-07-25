@@ -1,24 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Header />  @renders in advanced state 1`] = `
+<div
+  className="Header"
+>
+  <div
+    className="Header-tabs"
+  >
+    <div
+      className="Header-tab"
+      onClick={[Function]}
+    >
+      Classic
+    </div>
+    <div
+      className="Header-tab--active"
+      onClick={[Function]}
+    >
+      Advanced
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<Header />  @renders in default state 1`] = `
 <div
   className="Header"
 >
-  this is a header
-  <NavLink
-    activeClassName="Header-nav--active"
-    className="Header-nav"
-    exact={true}
-    to="/"
+  <div
+    className="Header-tabs"
   >
-    home
-  </NavLink>
-  <NavLink
-    activeClassName="Header-nav--active"
-    className="Header-nav"
-    to="/hello"
-  >
-    hello
-  </NavLink>
+    <div
+      className="Header-tab--active"
+      onClick={[Function]}
+    >
+      Classic
+    </div>
+    <div
+      className="Header-tab"
+      onClick={[Function]}
+    >
+      Advanced
+    </div>
+  </div>
 </div>
 `;

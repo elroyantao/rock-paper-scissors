@@ -1,14 +1,24 @@
 .Header {
-
+  margin-bottom: 30px;
 }
 
-.Header-nav {
-  color: green;
-  text-decoration: none;
+.Header-tabs {
+  display: flex;
 }
 
-.Header-nav--active {
-  composes: Header-nav;
-  color: red;
-  text-decoration: underline;
+.Header-tab {
+  flex: 1;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.Header-tab--active {
+  composes: Header-tab;
+  color: #59d482;
+  border-color: #59d482;
+  font-weight: bold;
 }

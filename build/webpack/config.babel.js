@@ -15,7 +15,7 @@ export default {
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, '../../public'),
-    publicPath: isProd ? '/static/' : `http://localhost:${WDS_PORT}/public/`
+    publicPath: isProd ? '../../public/' : `http://localhost:${WDS_PORT}/public/`
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -51,6 +51,10 @@ export default {
             }
           }
         ]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: 'file-loader'
       }
     ]
   },

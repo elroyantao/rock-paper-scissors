@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Score />  @renders in default state 1`] = `
+<section
+  className="Score"
+>
+  <div
+    className="Score-display"
+  >
+    <div
+      className="Score-label"
+    >
+      Player
+    </div>
+    <div
+      className="Score-current"
+    >
+      0
+    </div>
+  </div>
+  <div
+    className="Score-display"
+  >
+    <div
+      className="Score-label"
+    >
+      Computer
+    </div>
+    <div
+      className="Score-current"
+    >
+      0
+    </div>
+  </div>
+</section>
+`;
+
+exports[`<Score />  @renders when score is player 6 - 4 computer 1`] = `
+<section
+  className="Score"
+>
+  <div
+    className="Score-display"
+  >
+    <div
+      className="Score-label"
+    >
+      Player
+    </div>
+    <div
+      className="Score-current"
+    >
+      6
+    </div>
+  </div>
+  <div
+    className="Score-display"
+  >
+    <div
+      className="Score-label"
+    >
+      Computer
+    </div>
+    <div
+      className="Score-current"
+    >
+      4
+    </div>
+  </div>
+</section>
+`;

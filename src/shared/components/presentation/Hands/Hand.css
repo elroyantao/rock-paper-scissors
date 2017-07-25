@@ -1,0 +1,116 @@
+.Hand {
+  width: 150px;
+  max-width: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.Hand--progress {
+  composes: Hand;
+  max-width: initial;
+}
+
+.Hand-icon {
+  width: 50px;
+  height: 50px;
+  transition: width .5s, height .5s;
+  border: solid 1px black;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /*max-width: 60%;*/
+  /*transition: width .5s;*/
+}
+
+.Hand-icon:hover {
+  width: 75px;
+  height: 75px;
+  /*max-width: 80%;*/
+}
+
+.Hand-icon--progress {
+  composes: Hand-icon;
+}
+.Hand-icon--progress:hover {
+  width: 50px;
+  height: 50px;
+}
+
+.Hand-image {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+.Hand-image--rock {
+  composes: Hand-image;
+  background-image: url('../../../../../assets/rock.png');
+}
+.Hand-image--paper {
+  composes: Hand-image;
+  background-image: url('../../../../../assets/paper.png');
+}
+.Hand-image--scissors {
+  composes: Hand-image;
+  background-image: url('../../../../../assets/scissors.png');
+  background-size: 70%;
+}
+.Hand-image--lizard {
+  composes: Hand-image;
+  background-image: url('../../../../../assets/lizard.png');
+  background-size: 75%;
+  background-position-x: 75%;
+}
+.Hand-image--spock {
+  composes: Hand-image;
+  background-image: url('../../../../../assets/spock.png');
+  background-size: 65%;
+}
+
+.Hand-image--classicWaiting {
+  composes: Hand-image;
+  background-size: 65%;
+  animation: classicWait .6s infinite;
+}
+.Hand-image--advancedWaiting {
+  composes: Hand-image;
+  background-size: 65%;
+  animation: advancedWait 1s infinite;
+}
+
+@keyframes advancedWait {
+    0%   {
+      background-image: url('../../../../../assets/rock.png');
+    }
+    20%   {
+      background-image: url('../../../../../assets/paper.png');
+    }
+    40%   {
+      background-image: url('../../../../../assets/scissors.png');
+    }
+    60%   {
+      background-image: url('../../../../../assets/lizard.png');
+    }
+    80%   {
+      background-image: url('../../../../../assets/spock.png');
+    }
+}
+
+@keyframes classicWait {
+    0%   {
+      background-image: url('../../../../../assets/rock.png');
+    }
+    33%   {
+      background-image: url('../../../../../assets/paper.png');
+    }
+    66%   {
+      background-image: url('../../../../../assets/scissors.png');
+    }
+}

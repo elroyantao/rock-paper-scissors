@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hand />  @renders in default state when type is 0/rock 1`] = `
+<div
+  className="Hand"
+>
+  <div
+    className="Hand-icon"
+    onClick={[Function]}
+  >
+    <div
+      className="Hand-image--rock"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Hand />  @renders when type is 1/lizard 1`] = `
+<div
+  className="Hand"
+>
+  <div
+    className="Hand-icon"
+    onClick={[Function]}
+  >
+    <div
+      className="Hand-image--lizard"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Hand />  @renders when type is 1/paper 1`] = `
+<div
+  className="Hand"
+>
+  <div
+    className="Hand-icon"
+    onClick={[Function]}
+  >
+    <div
+      className="Hand-image--paper"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Hand />  @renders when type is 1/scissors 1`] = `
+<div
+  className="Hand"
+>
+  <div
+    className="Hand-icon"
+    onClick={[Function]}
+  >
+    <div
+      className="Hand-image--scissors"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Hand />  @renders when type is 1/spock 1`] = `
+<div
+  className="Hand"
+>
+  <div
+    className="Hand-icon"
+    onClick={[Function]}
+  >
+    <div
+      className="Hand-image--spock"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Hand />  @renders when type is a string 1`] = `
+<div
+  className="Hand"
+>
+  <div
+    className="Hand-icon"
+    onClick={[Function]}
+  >
+    <div
+      className="Hand-image--waiting"
+    />
+  </div>
+</div>
+`;

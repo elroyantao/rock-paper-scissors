@@ -11,6 +11,8 @@ const rootEl = document.querySelector(`.${APP_CONTAINER_CLASS}`)
 
 const store = configureStore()
 
+console.log('here');
+
 const wrapApp = (AppComponent, reduxStore) => (
   <Provider store={reduxStore}>
     <AppContainer>

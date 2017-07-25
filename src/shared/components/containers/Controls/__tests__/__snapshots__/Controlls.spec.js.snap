@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Controls />  @renders in default state 1`] = `
+<div
+  className="Controls"
+>
+  <Connect(Controls)
+    applyHand={[Function]}
+  />
+  <Connect(InProgress) />
+</div>
+`;
+
+exports[`<Controls />  @renders when playerHand and computerHand is not null it should show the play again button 1`] = `
+<div
+  className="Controls"
+>
+  <Connect(Controls)
+    applyHand={[Function]}
+  />
+  <Connect(InProgress) />
+  <div>
+    <button
+      className="Controls-playAgain"
+      onClick={[Function]}
+    >
+      Play Again
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Controls />  @renders when result is loose 1`] = `
+<div
+  className="Controls"
+>
+  <Connect(Controls)
+    applyHand={[Function]}
+  />
+  <Connect(InProgress) />
+  <div
+    className="Controls-result--loose"
+  >
+    Computer wins!!
+  </div>
+</div>
+`;
+
+exports[`<Controls />  @renders when result is tie 1`] = `
+<div
+  className="Controls"
+>
+  <Connect(Controls)
+    applyHand={[Function]}
+  />
+  <Connect(InProgress) />
+  <div
+    className="Controls-result--tie"
+  >
+    It's a tie!!
+  </div>
+</div>
+`;
+
+exports[`<Controls />  @renders when result is win 1`] = `
+<div
+  className="Controls"
+>
+  <Connect(Controls)
+    applyHand={[Function]}
+  />
+  <Connect(InProgress) />
+  <div
+    className="Controls-result--win"
+  >
+    You win!!
+  </div>
+</div>
+`;

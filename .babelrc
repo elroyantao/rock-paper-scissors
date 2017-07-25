@@ -5,6 +5,13 @@
     "stage-3",
     "react",
   ],
+  "env": {
+    "jestTest": {
+      "plugins": [
+        "babel-plugin-rewire"
+      ]
+    }
+  },
   "plugins": [
     "transform-decorators-legacy",
     "transform-class-properties"
